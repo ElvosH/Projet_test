@@ -1,0 +1,26 @@
+from tkinter import*
+
+#créer fenêtre 
+fenetre = Tk()
+#dimension fenetre 
+fenetre.geometry('400x400')
+#titre fenetre
+fenetre.title('test création fenêtre TM')
+#bg = background
+fenetre['bg'] = 'purple'
+#fixer dimentions fenetre (non-modifiable)
+fenetre.resizable(height=False,width=False)
+
+#stocker Label dans zonetexte 
+zonetexte = Label(fenetre, text="Puissance 4")
+
+"""
+#padx = nbr de pixels
+zonetexte.pack(side=RIGHT, padx=100)
+"""
+
+#x, y = abscisse Y, ordonné X
+zonetexte.place(x='170',y='200')
+ 
+#boucle infini pour lancer la fenetre 
+fenetre.mainloop()
